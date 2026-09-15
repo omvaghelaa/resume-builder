@@ -34,13 +34,13 @@ if ($_POST) {
                 $mail->isSMTP();
                 $mail->Host       = 'smtp.gmail.com';
                 $mail->SMTPAuth   = true;
-                $mail->Username   = 'breezebeamteam@gmail.com';
-                $mail->Password   = 'wcjwryeawtunobkw';
+                $mail->Username   = 'MAIL';
+                $mail->Password   = 'PASSWORD';
                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
                 $mail->Port       = 465;
 
                 //Recipients
-                $mail->setFrom('breezebeamteam@gmail.com', 'Resumify');
+                $mail->setFrom('MAIL', 'Resumify');
                 $mail->addAddress($email_id);
 
                 //Content
